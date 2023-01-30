@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color fun</title>
+</head>
+<body>
+    <button id="green">G</button>
+    <button id="blue">B</button>
+    <button id="red">R</button>
+    <button id="yellow">Y</button>
+    <button id="pink">P</button>
+
+    <script>
+        let body=document.querySelector('body');
+        document.querySelector('#green').onclick =function(){
+            body.style.backgroundColor="green"; 
+        };
+        document.querySelector('#blue').onclick=function() {
+            body.style.backgroundColor='blue';
+        };
+        document.querySelector('#red').onclick=function(){
+            body.style.backgroundColor ='red';
+        };
+        document.querySelector("#yellow").onclick=function() {
+            body.style.backgroundColor ='yellow';
+        };
+        document.querySelector('#pink').onclick=function() {
+            body.style.backgroundColor='pink';
+        };
+
+
+    </script>
+</body>
+</html>
