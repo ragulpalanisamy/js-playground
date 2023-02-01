@@ -134,7 +134,7 @@ document.getElementById("sub").onclick=function(){
 }
 */
 //if-else
-
+/*
 document.getElementById("button").onclick= function() {
     const pay=document.getElementById("pay");
     const pho=document.getElementById("pho");
@@ -166,7 +166,87 @@ for(let b=0;b<n;b++){
     }
     document.getElementById("h").innerHTML += "<br>";
 }
+*/
 
+//function concepts
+/*
+document.getElementById("h").onclick=function() {
+
+let usname=window.prompt("enter the name..");
+
+ragul(usname);
+function ragul(usname){
+    console.log(`Welcome ${usname}`);
+}
+
+
+
+let width=window.prompt("enter the width..");
+let length=window.prompt("enter the length..");
+let area;
+
+area = Area(width,length);
+window.alert("the area is : ", area);
+function Area(width,length){
+    let lem=width*length;
+    return lem;
+}
+
+}
+*/
+
+// number gussing game.
+/*
+const num = Math.floor(Math.random() * 10 + 1);
+let count=0;
+document.getElementById("guss").onclick= function() {
+   let a = document.getElementById("g").value;
+   count +=1;
+    if(a == num){
+        window.alert(` the guss number is ${num}, you took ${count}`)
+    }
+    else if(a < num){
+        window.alert(`To Small`)
+    }
+    else{
+        window.alert(`To Big`);
+    }
+
+}
+*/
+
+document.getElementById("temp").onclick = function() {
+
+    let temp;
+
+
+    if(document.getElementById("cel").checked){
+        temp = document.getElementById("a").value;
+        temp = Number(temp);
+        temp = cels(temp);
+        document.getElementById("don").innerHTML = "<br>"+ temp + "*c";  
+    }
+
+    else if(document.getElementById("fah").checked){
+        temp = document.getElementById("a").value;
+        temp = Number(temp);
+        temp = fahe(temp);
+        document.getElementById("don").innerHTML = "<br>"+temp + "*F";  
+    }
+
+    else{
+        window.alert("Enter the Temperature: ");
+    }
+}
+
+
+    function cels(temp){
+        return ((temp -32) * (5/9));
+    }
+
+    function fahe(temp){
+        return temp * 9 / 5 + 32;
+    }
 
 
 
