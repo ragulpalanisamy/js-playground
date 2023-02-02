@@ -323,6 +323,7 @@ const greet = function(){
 greet();
 
 */
+/*
 
 let count=0;
 
@@ -336,11 +337,69 @@ function decrease(){
     document.getElementById("label").innerHTML = count;
 }
 
+*/
+
+//arrow function
+/*
+let a = (x,y) => x / y * 100;
+
+console.log(`${a(45,115)}%`)
+
+*/
+
+//sorting using arrow method.
+/*
+let a = [12,2,3,4,5];
 
 
+a.sort((a,b) => a-b);
 
+a.forEach((a) => console.log(a));
+*/
 
+//shuffle the cards in an array .
+/*
+let cards=["A","2","3","4","5","6","7","8","9","10","J","Q","K"];
 
+shuffle(cards);
+
+cards.forEach(card => console.log(card));
+
+function shuffle(a){
+    let currentarr = a.length;
+    
+    while(currentarr !=0){
+        let random = Math.floor(Math.random() * a.length);
+        currentarr -= 1;
+
+        let temp = a[currentarr];
+        a[currentarr] = a[random];
+        a[random] = temp;
+
+    }
+    return a;
+}
+
+*/
+
+let uname=window.prompt("enter ur name");
+let inbox=0;
+
+login();
+
+function login(){
+
+    username();
+    inb();
+
+    function username(){
+        console.log(`welcome!. ${uname}` );
+    }
+
+    function inb(){
+        console.log(`you recieved  ${inbox} messeges`);
+    }
+}
 
 
 
