@@ -215,6 +215,8 @@ document.getElementById("guss").onclick= function() {
 }
 */
 
+//celsius and faherinheit
+/* 
 document.getElementById("temp").onclick = function() {
 
     let temp;
@@ -247,13 +249,92 @@ document.getElementById("temp").onclick = function() {
     function fahe(temp){
         return temp * 9 / 5 + 32;
     }
+*/
+
+//for each
+/*
+let s=["apple","mango","orange"];
+
+s.forEach(dy);
+s.forEach(by);
+
+function dy(ele,ind,arr){
+     arr[ind] = ele[0].toUpperCase() + ele.substring(1);
+    document.getElementById("my").innerHTML= arr[0];    
+}
+
+//console.log(s[0]);
+
+function by(ele){
+ //   document.getElementById("my").innerHTML= ele;
+    console.log(ele);
+}
+
+*/
+
+//array map.
+/*
+let a=[1,2,3,4,5];
+let sq = a.map(cube);
+sq.forEach(p);
+
+function sqr(a){
+    return Math.pow(a,2);
+}
+
+function cube(b){
+    return Math.pow(b,3);
+}
+
+function p(b){
+    console.log(b);
+}
+
+*/
+
+//sorting
+/*
+let a=[100,80,50,30,40,35];
+
+let s=a.sort(ascsor);
+
+//let r=a.sort(decsor);
+a.forEach(print);
+
+function ascsor(a,b){
+    return a-b;
+}
+
+function decsor(a,b){
+   return b-a;
+}
 
 
+function print(a){
+console.log(a);
+}
+*/
 
+//function without function name or function expression.
+/*
+const greet = function(){
+    window.alert("Hi!..");
+}
+greet();
 
+*/
 
+let count=0;
 
+function increase(){
+    count+=1;
+    document.getElementById("label").innerHTML = count;
+}
 
+function decrease(){
+    count-=1;
+    document.getElementById("label").innerHTML = count;
+}
 
 
 
