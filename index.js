@@ -514,6 +514,43 @@ console.log(stud1.gpa);
 console.log(stud1.study());
 */
 
+//inheritence
+/*
+class Animal{
+     
+    alive = true;
+
+    sleep(){
+        console(`The ${this.name} can sleep`);
+    }
+    eat(){
+        console.log(`The ${this.name} can eat`);
+    }
+}
+    class rabbit extends Animal{
+
+        name="Rabbit";
+
+        run(){
+            console.log(`The ${this.name} can run`);
+        }
+    }
+        class fish extends Animal{
+
+            name="Fish";
+    
+            run(){
+                console.log(`The ${this.name} can swim`);
+            }
+    };
+
+    const rabbits = new rabbit();
+    const fisha = new fish(); 
+console.log(rabbits.alive);
+console.log(rabbits.run());
+
+*/
+
 
 
 
