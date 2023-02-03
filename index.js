@@ -407,7 +407,7 @@ function login(){
 
 
 //console.log(da(date));
-
+/*
 let lab = document.getElementById("lab"); 
 setInterval(da, 1000);
 da();
@@ -439,12 +439,80 @@ function da(){
     } 
 }
 
+*/
 
+//class 
+/*
+ let score=0;
+class car{
+     
 
+    pause() {
+        console.log("you paused the game");
+    }
+    exit(){
+        console.log(`you exit the game with the score ${score}`);
+    }
+}
 
+let car1 = new car();
 
+score+=3;
+car1.pause();
+car1.exit();
 
+*/
 
+//class object
+/*
+let car={
+    model :"Ford",
+    year  :"2022",
+    color :"red",
+
+    drive:function(){
+        console.log(`you can drive the ${car.model}`);
+    }
+    ,
+    stop: (()=>{
+        console.log(`you brake the ${car.model}`);
+    })
+
+//brake();
+};
+
+//let car1= new car();
+
+console.log(car.model);
+console.log(car.year);
+car.drive();
+car.stop();
+
+*/
+
+//constructor
+/*
+class stud{
+
+    constructor(name,age,gpa){
+        this.name = name,
+        this.age = age,
+        this.gpa = gpa;
+    }
+
+    study(){
+
+        console.log(`the ${this.name} is studing`);
+    }
+};
+
+let stud1 = new stud("ragul",21,9.2);
+
+console.log(stud1.name);
+console.log(stud1.age);
+console.log(stud1.gpa);
+console.log(stud1.study());
+*/
 
 
 
