@@ -382,6 +382,7 @@ function shuffle(a){
 
 */
 
+/*
 let uname=window.prompt("enter ur name");
 let inbox=0;
 
@@ -401,6 +402,42 @@ function login(){
     }
 }
 
+*/
+
+
+
+//console.log(da(date));
+
+let lab = document.getElementById("lab"); 
+setInterval(da, 1000);
+da();
+
+function da(){
+    let date = new Date();
+
+    lab.innerHTML = time(date);
+
+    function time(){
+    let hour = date.getHours();
+    let minute = date.getMinutes();
+    let second = date.getSeconds();
+   
+    let ap = hour >= 12 ? "PM" : "AM"; 
+
+    hour = (hour % 12) || 12;
+
+    hour = zer(hour);
+    minute = zer(minute);
+    second = zer(second);
+
+    return `${hour}h : ${minute}m : ${second}s ${ap}`;
+    }
+
+    function zer(time){
+        time=time.toString();
+        return time.length > 12? "0" + time : time; 
+    } 
+}
 
 
 
