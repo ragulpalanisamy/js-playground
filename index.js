@@ -551,6 +551,47 @@ console.log(rabbits.run());
 
 */
 
+//event listner.
+const button = document.getElementById("button");
+const lab = document.getElementById("lab");
+button.addEventListener("click", fun);
+lab.addEventListener("mouseover", move);
+lab.addEventListener("mouseout", out);
+//lab.addEventListener("", out);
+function fun(){
+    alert('you did something!...');
+}
+
+function move(){
+    lab.style.backgroundColor= "Red";
+}
+function out(){
+    lab.style.backgroundColor= "lightgreen";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
