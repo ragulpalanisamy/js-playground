@@ -552,6 +552,7 @@ console.log(rabbits.run());
 */
 
 //event listner.
+/*
 const button = document.getElementById("button");
 const lab = document.getElementById("lab");
 button.addEventListener("click", fun);
@@ -568,6 +569,35 @@ function move(){
 function out(){
     lab.style.backgroundColor= "lightgreen";
 }
+*/
+
+const outer = document.getElementById("outer");
+const inner = document.getElementById("inner");
+
+outer.addEventListener("click", out);
+inner.addEventListener("click", out);
+
+outer.addEventListener("mouseover", move);
+inner.addEventListener("mouseout", out);
+//lab.addEventListener("", out);
+function fun(){
+    alert('you did something!...');
+}
+
+function move(){
+    lab.style.backgroundColor= "Red";
+}
+function out(){
+    lab.style.backgroundColor= "lightgreen";
+}
+
+
+function out(){
+    alert(`You selected ${this.id}`);
+    this.style.backgroundColor="blue";
+
+}
+
 
 
 
