@@ -600,6 +600,7 @@ function out(){
 */
 
 //amstrong number.
+/*
 let a = window.prompt("Enter a Number:");
 a=Number(a);
 let temp=a;
@@ -621,7 +622,32 @@ else{
 }
 
 }
+*/
 
+//Animation slider
+
+let button = document.getElementById("button");
+let anime = document.getElementById("inner");
+
+button.addEventListener("click", begain);
+
+function begain(){
+    let time = null;
+    let x=0;
+    let y=0;
+    time =setInterval(frame, 3);
+    function frame(){
+        if(y>200){
+            clearInterval(time);
+        }
+        else{
+            x+=1;
+            y+=1;
+            anime.style.left = x+"px";
+            anime.style.top = y+"px";
+        }
+    }
+}
 
 
 
