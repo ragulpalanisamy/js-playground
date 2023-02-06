@@ -652,7 +652,7 @@ function begain(){
 */
 
 //Animation Scale like expand to x-axis and y-axis
-
+/*
 let button = document.getElementById("button");
 let anime = document.getElementById("inner");
 
@@ -675,6 +675,36 @@ function begain(){
             anime.style.transform = "scaleX("+scaleX+")";
             anime.style.transform = "scaleY("+scaleY+")";
 
+        }
+    }
+}
+*/
+
+//Animation Rotate the box into 360degree
+
+let button = document.getElementById("button");
+let anime = document.getElementById("inner");
+
+button.addEventListener("click", begain);
+
+function begain(){
+    let time = null;
+    let x =0;
+    let y =0;
+
+    time = setInterval(frame,5);
+
+    function frame(){
+        if(x >= 360 || y>=360){
+            clearInterval(time);
+        }
+        else{
+            x +=1;
+            y +=1;
+            anime.style.transform = "rotateZ("+x+"deg)";
+           // anime.style.transform = "rotateY("+y+"deg)";
+            //anime.style.transform = "rotateZ("+degree+"deg)";
+            
         }
     }
 }
