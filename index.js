@@ -570,7 +570,7 @@ function out(){
     lab.style.backgroundColor= "lightgreen";
 }
 */
-
+/*
 const outer = document.getElementById("outer");
 const inner = document.getElementById("inner");
 
@@ -597,7 +597,30 @@ function out(){
     this.style.backgroundColor="blue";
 
 }
+*/
 
+//amstrong number.
+let a = window.prompt("Enter a Number:");
+a=Number(a);
+let temp=a;
+isArmstrongNumber(a);
+function isArmstrongNumber(num) {
+    let numOfDigits = num.toString().length;
+    let sum = 0;
+    while (num > 0) {
+      let digit = num % 10;
+      sum += Math.pow(digit, numOfDigits);
+      num = Math.floor(num / 10);
+    }
+  
+  if(sum == temp){
+    alert(`${temp} is a amstrong Number`);
+}
+else{
+    alert(`${temp} is not an Amstrong Number`);
+}
+
+}
 
 
 
