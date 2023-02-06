@@ -625,7 +625,7 @@ else{
 */
 
 //Animation slider
-
+/*
 let button = document.getElementById("button");
 let anime = document.getElementById("inner");
 
@@ -649,8 +649,35 @@ function begain(){
     }
 }
 
+*/
 
+//Animation Scale like expand to x-axis and y-axis
 
+let button = document.getElementById("button");
+let anime = document.getElementById("inner");
+
+button.addEventListener("click", begain);
+
+function begain(){
+    let time = null;
+    let scaleX = 1;
+    let scaleY = 1;
+    
+    time = setInterval(frame,5);
+
+    function frame(){
+        if(scaleX >= 2 || scaleY >=2){
+            clearInterval(time);
+        }
+        else{
+            scaleX +=0.01;
+            scaleY +=0.01;
+            anime.style.transform = "scaleX("+scaleX+")";
+            anime.style.transform = "scaleY("+scaleY+")";
+
+        }
+    }
+}
 
 
 
