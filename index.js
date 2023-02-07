@@ -681,7 +681,7 @@ function begain(){
 */
 
 //Animation Rotate the box into 360degree
-
+/*
 let button = document.getElementById("button");
 let anime = document.getElementById("inner");
 
@@ -709,6 +709,17 @@ function begain(){
     }
 }
 
+*/
+
+//canvas API
+
+let canvas = document.getElementById("inner");
+let context= canvas.getContext("2d");
+
+context.beginPath();
+context.moveTo(0 , 0);
+context.lineTo(500,500);
+context.stroke();
 
 
 
