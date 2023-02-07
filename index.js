@@ -725,7 +725,7 @@ context.stroke();
 */
 
 // Y using Canvas.
-
+/*
 let canvas = document.getElementById("inner");
 let context= canvas.getContext("2d");
 
@@ -737,6 +737,29 @@ context.moveTo(500 , 0);
 context.lineTo(250,250)
 
 context.stroke();
+*/
+
+//square
+
+let canvas = document.getElementById("inner");
+let context= canvas.getContext("2d");
+
+context.beginPath();
+context.moveTo(0 , 0);
+context.lineTo(250,0);
+context.lineTo(250,250);
+context.moveTo(250 , 250);
+context.lineTo(0,250);
+context.moveTo(0,0);
+context.lineTo(0,250);
+
+
+context.strokeStyle ="blue";
+context.lineWidth = 10;
+context.stroke();
+
+
+
 
 
 
