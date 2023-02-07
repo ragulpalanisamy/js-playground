@@ -740,7 +740,7 @@ context.stroke();
 */
 
 //square
-
+/*
 let canvas = document.getElementById("inner");
 let context= canvas.getContext("2d");
 
@@ -757,7 +757,22 @@ context.lineTo(0,250);
 context.strokeStyle ="blue";
 context.lineWidth = 10;
 context.stroke();
+*/
 
+//Trinangle
+
+let canvas = document.getElementById("inner");
+let context= canvas.getContext("2d");
+
+context.beginPath();
+context.moveTo(250 ,0);
+context.lineTo( 0, 250);
+context.lineTo(500,250);
+context.lineTo(250,0);
+
+context.strokeStyle ="blue";
+context.lineWidth = 10;
+context.stroke();
 
 
 
