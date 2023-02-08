@@ -794,6 +794,7 @@ context.stroke();
 */
 
 //fill with cubes.
+/*
 let canvas = document.getElementById("inner");
 let context= canvas.getContext("2d");
 
@@ -817,9 +818,20 @@ context.fillRect(250,0,250,250);
 context.fillStyle = "black";
 context.fillRect(250,0,250,250);
 
+*/
 
+//circle
 
+let canvas = document.getElementById("inner");
+let context= canvas.getContext("2d");
 
+context.beginPath();
+context.arc(250,250,200,0,2 * Math.PI);
+context.fillStyle = "pink";
+context.strokeStyle ="blue";
+context.lineWidth = 10;
+context.stroke();
+context.fill();
 
 
 
