@@ -776,6 +776,7 @@ context.stroke();
 */
 
 //Rectangle
+/*
 let canvas = document.getElementById("inner");
 let context= canvas.getContext("2d");
 
@@ -789,6 +790,32 @@ context.lineTo(-100000,100);
 context.strokeStyle ="blue";
 context.lineWidth = 10;
 context.stroke();
+
+*/
+
+//fill with cubes.
+let canvas = document.getElementById("inner");
+let context= canvas.getContext("2d");
+
+context.fillStyle= "pink";
+context.fillRect(0,0,250,250);
+context.fillStyle = "pink";
+context.fillRect(0,0,250,250);
+
+context.fillStyle= "black";
+context.fillRect(0,250,250,250);
+context.fillStyle = "blue";
+context.fillRect(0,250,250,250);
+
+context.fillStyle= "yellow";
+context.fillRect(250,250,250,250);
+context.fillStyle = "yellow";
+context.fillRect(250,250,250,250);
+
+context.fillStyle= "green";
+context.fillRect(250,0,250,250);
+context.fillStyle = "black";
+context.fillRect(250,0,250,250);
 
 
 
