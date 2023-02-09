@@ -835,7 +835,7 @@ context.fill();
 */
 
 //alert text
-
+/*
 document.getElementById("inner").onclick = function(){
     let name = window.prompt("Enter the name");
     window.alert("Welcome "+ name);
@@ -872,6 +872,29 @@ console.log(a);
 //sort from decending order using method chaining .
 a.sort().reverse();
 console.log(a);
+*/
+
+//2D array
+
+let row = prompt("enter the rows: ");
+let col = prompt("enter the column: ");
+let arr=[];
+
+for(let i=0;i<row;i++){
+   arr[i]=[];
+   for(let j=0;j<col;j++){
+    arr[i][j]= prompt(`Enter the value arr[${i}][${j}]`);
+   }
+}
+
+//Enter array
+
+for(let i=0;i<row;i++){
+    for(let j=0;j<col;j++){ 
+        document.write(arr[i][j] + " ");
+    }
+    document.write("<br>");
+}
 
 
 
