@@ -821,7 +821,7 @@ context.fillRect(250,0,250,250);
 */
 
 //circle
-
+/*
 let canvas = document.getElementById("inner");
 let context= canvas.getContext("2d");
 
@@ -832,9 +832,46 @@ context.strokeStyle ="blue";
 context.lineWidth = 10;
 context.stroke();
 context.fill();
+*/
 
+//alert text
 
+document.getElementById("inner").onclick = function(){
+    let name = window.prompt("Enter the name");
+    window.alert("Welcome "+ name);
+}
 
+//arr fun
+
+let a=['ragul','IT','2023'];
+//print all values
+for(let b of a){
+    console.log(b);
+}
+
+//add another vaue at last
+a.push("snsct");
+console.log(a);
+//remove last element in an array
+a.pop();
+console.log(a);
+
+//add element in front of the arr
+a.unshift("snsct");
+console.log(a);
+
+//remove first element in an array
+
+a.shift();
+console.log(a);
+console.log(a.length);
+
+// sort in ascending order
+a.sort();
+console.log(a);
+//sort from decending order using method chaining .
+a.sort().reverse();
+console.log(a);
 
 
 
