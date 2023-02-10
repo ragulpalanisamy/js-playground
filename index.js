@@ -875,7 +875,7 @@ console.log(a);
 */
 
 //2D array
-
+/*
 let row = prompt("enter the rows: ");
 let col = prompt("enter the column: ");
 let arr=[];
@@ -895,6 +895,65 @@ for(let i=0;i<row;i++){
     }
     document.write("<br>");
 }
+*/
+/*
+//without using windows prompt to alert the string from the user.
+document.getElementById("id").onclick = function(){
+    let str = document.getElementById("text").value;
+     window.alert(str);
+     
+}
+//without using windows prompt to display the string from the user.
+
+document.getElementById("id").onclick = function(){
+    let str = document.getElementById("text").value;
+    document.getElementById("inner").innerHTML = str;     
+}
+*/
+
+//show or hide html element
+/*
+const a = document.querySelector("#id");
+const b = document.querySelector("img");
+
+a.addEventListener("click",() =>{
+    if(b.style.display == 'none'){
+        b.style.display="block";
+    }
+    else{
+        b.style.display="none";
+    }
+});
+*/
+
+const head = document.getElementById("h1");
+window.addEventListener("keydown", move);
+let x=0;
+let y=0;
+function move(event){
+
+    switch(event.key){
+        case "ArrowDown":
+            y+=5;
+            head.style.top = y+"px";
+            break;
+        case "ArrowUp":
+            y-=5;
+            head.style.top = y+"px";
+            break;
+        case "ArrowRight":
+            x+=5;
+            head.style.left = x+"px";
+            break;
+        case "ArrowLeft":
+            x-=5;
+            head.style.left = x+"px";
+            break;
+        default:
+            window.alert("This is not a write key");   
+                
+    }
+};
 
 
 
