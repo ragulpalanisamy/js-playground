@@ -965,17 +965,26 @@ document.getElementById("h1").innerHTML = date;
 */
 
 //string reverse
-
+/*
 let h=window.prompt("Enter the String");
 console.log(h);
 let str = h.split('');
 str.reverse();
 window.alert(str.join(''));
 
+*/
+//background color change by event handler
 
+let sty = document.querySelector('button');
+let body = document.querySelector('body');
+let color =['blue','red','pink','yellow','orange','violet','black'];
 
+sty.addEventListener("click", bg);
 
-
+function bg(){
+    const change = parseInt((Math.random())*color.length);
+    body.style.backgroundColor = color[change];
+    }
 
 
 
