@@ -926,7 +926,7 @@ a.addEventListener("click",() =>{
 });
 */
 
-
+/*
 const head = document.getElementById("h1");
 window.addEventListener("keydown", move);
 let x=0;
@@ -956,12 +956,21 @@ function move(event){
     }
 };
 
-
 //data
 
 let date = document.getElementById("h1");
 date = new Date();
 document.getElementById("h1").innerHTML = date;
+
+*/
+
+//string reverse
+
+let h=window.prompt("Enter the String");
+console.log(h);
+let str = h.split('');
+str.reverse();
+window.alert(str.join(''));
 
 
 
