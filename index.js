@@ -974,7 +974,7 @@ window.alert(str.join(''));
 
 */
 //background color change by event handler
-
+/*
 let sty = document.querySelector('button');
 let body = document.querySelector('body');
 let color =['blue','red','pink','yellow','orange','violet','black'];
@@ -984,6 +984,20 @@ sty.addEventListener("click", bg);
 function bg(){
     const change = parseInt((Math.random())*color.length);
     body.style.backgroundColor = color[change];
+    }
+*/
+
+//using Hexdecimal BG color change
+let sty = document.querySelector('button');
+let body = document.querySelector('body');
+let color =['#0066ff','#ff0000','#ff0066','#ffff00','#ff6600','#800080','#0d0d0d'];
+
+sty.addEventListener("click", bg);
+
+function bg(){
+    const change = parseInt((Math.random())*color.length);
+    body.style.backgroundColor = color[change];
+    document.getElementById("h").innerHTML = color[change];
     }
 
 
