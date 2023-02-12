@@ -7,8 +7,9 @@
     <title>Projects</title>
     <style>
         body{
-            background: linear-gradient(pink,grey,yellow);
+            background: linear-gradient(pink,grey);
         }
+        /*
         #container{
             border: 1px solid grey;
             margin:10px;
@@ -24,15 +25,54 @@
             justify-content: center;
             text-align: center;
         }
+        */
+        h1{
+            justify-content: center;
+            text-align: center;
+        }
+        #lower,#add{
+            height:auto;
+            width: auto;
+            background-color: blue;
+            font-size: medium;
+            color:antiquewhite;
+        }
+        #container{
+            border: 1px solid grey;
+            margin:10px;
+            padding: 15%;
+            height: 500px;
+            width: 500px;
+            background-color: black;
+        }
+        h1{
+            color:antiquewhite;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #h{
+            color: green;
+            font-size: 100px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-ser;
+            text-align: center;
+        }
+
     </style>
 </head>
 <body>
+    <!--
     <div id="container">
         <button id="button"><h1>Generate Quote</h1></button>
         <h1 id="h"></h1>
         <h3 id="h3"></h3>
     </div>
-
+-->
+    <div id="container">
+        <h1>COUNTER</h1>
+        <h2 id="h"></h2>
+        <button id="lower">Lower Count</button>
+        <button id="add">Add Count</button>
+    </div>
     <script src="projects.js"></script>
 </body>
 </html>
