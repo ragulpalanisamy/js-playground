@@ -23,7 +23,7 @@ function quote(){
 */
 
 //counter Project
-
+/*
 let count =0;
 
 document.getElementById('lower').onclick = function(){
@@ -35,4 +35,9 @@ document.getElementById('lower').onclick = function(){
 document.getElementById('add').onclick = function(){
     count +=1;
     document.getElementById('h').innerHTML = count;
+}
+*/
+function ChangeColor(color){
+    let container = document.getElementById("container");
+    container.style.backgroundColor = color;
 }
