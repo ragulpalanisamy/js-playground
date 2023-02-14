@@ -5,60 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
-    <style>
-        body{
-            background: linear-gradient(pink,grey);
-        }
-        /*
-        #container{
-            border: 1px solid grey;
-            margin:10px;
-            padding: 15%;
-            height: 500px;
-            width: 500px;
-            background-color: black;
-        }
-        h1,h3{
-            height:50%;
-            width: 50%;
-            background-color: aliceblue;
-            justify-content: center;
-            text-align: center;
-        }
-        */
-        h1{
-            justify-content: center;
-            text-align: center;
-        }
-        #lower,#add{
-            height:auto;
-            width: auto;
-            background-color: blue;
-            font-size: medium;
-            color:antiquewhite;
-        }
-        #container{
-            border: 1px solid grey;
-            margin:10px;
-            padding: 15%;
-            height: 500px;
-            width: 500px;
-            background-color: black;
-        }
-        h1{
-            color:antiquewhite;
-            font-weight: bold;
-            font-family: 'Courier New', Courier, monospace;
-        }
-        #h{
-            color: green;
-            font-size: 100px;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-ser;
-            text-align: center;
-        }
-
-    </style>
-</head>
+    <link rel="stylesheet" href="projects.css">    
+    </head>
 <body>
     <!--
     <div id="container">
@@ -67,12 +15,23 @@
         <h3 id="h3"></h3>
     </div>
 -->
-    <div id="container">
+   <!-- <div id="container">
         <h1>COUNTER</h1>
         <h2 id="h"></h2>
         <button id="lower">Lower Count</button>
         <button id="add">Add Count</button>
     </div>
+-->
+
+    <div id="container"></div>
+        <h1 id="box">Box Model</h1>
+        <button onclick = "ChangeColor('green')">content</button>
+        <button onclick = "ChangeColor('red')">Padding</button>
+        <button onclick = "ChangeColor('pink')">Border</button>
+        <button onclick = "ChangeColor('yellow')">margin</button>
+
+    
+
     <script src="projects.js"></script>
 </body>
 </html>
