@@ -43,6 +43,7 @@ function ChangeColor(color){
     container.style.backgroundColor = color;
 }
 */
+/*
 var weight = window.prompt("enter the weight");
 let height = window.prompt("enter the height");
 let measure = window.prompt("enter the measure");
@@ -82,3 +83,30 @@ function calculate() {
 		document.getElementById("results").innerHTML = "Negative Values not Allowed";
 	}
 }
+*/
+//class & Object.
+class fruits{
+	constructor(name,color)
+	{
+		this.name = name;
+		this.color = color;
+	}
+		sweet() {
+
+			console.log(`Fruit Name : ${this.name}`);
+			console.log(`Fruit color : ${this.color}`);
+			console.log("Solid sweet with rich carbohydrate");
+		
+		}
+	
+}
+	class apple extends fruits {
+		//name='apple';
+		//color='red';
+		
+	}
+
+
+let appl = new fruits('apple','red');
+console.log(appl.name);
+appl.sweet();
