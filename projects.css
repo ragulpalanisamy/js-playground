@@ -51,6 +51,7 @@
             text-align: center;
         }
         */
+        /*
         #container{
             border: 1px solid black;
             margin:10px;
@@ -76,4 +77,48 @@
         #seconds, #tens{
             font-size:2em;
           }
-          
+          */
+
+        .container{
+            background-color: rga(233,200,155);
+        }
+
+        .circle{
+            height: 200px;
+            width:200px;
+            border-radius: 100px;
+            border: 1px dashed blue; 
+            color: darkgoldenrod;
+            background-color: aqua;
+        }
+
+        .square{
+            height: 200px;
+            width:200px;
+            border-radius: 10px;
+            border: 1px dashed blue; 
+            color: darkblue;
+            background-color: lightcoral;
+        }
+
+        .rect{
+            height: 200px;
+            width:500px;
+            border-radius: 10px;
+            border: 1px dashed blue; 
+            color: darkgoldenrod;
+            background-color: chocolate;
+        }
+
+        .tri{
+            height: 0;
+            width:0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid gray;
+           /* border: 1px dashed blue; 
+            margin: 2rem;
+            color: darkgoldenrod;
+            background-color: aqua;
+        */
+        }
