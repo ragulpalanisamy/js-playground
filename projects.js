@@ -113,6 +113,7 @@ console.log(appl.name);
 appl.sweet();
 */
 //stopwatch
+/*
 window.onload = function () {
   
 	var seconds = 00; 
@@ -170,13 +171,34 @@ window.onload = function () {
 	  }
 	
 	}
-	
-  
   }
+*/
+
+let circle = document.getElementById("circle");
+let square = document.getElementById("square");
+let rect = document.getElementById("rect");
+let tri = document.getElementById("tri");
 
 
+circle.onclick = function(){
+	circle.style.display = "none";
+}
+square.onclick = function(){
+	square.style.display = "none";
+}
+rect.onclick = function(){
+	rect.style.display = "none";
+}
+tri.onclick = function(){
+	tri.style.display = "none";
+}
 
-
+document.getElementById("dis").onclick = function(){
+	tri.style.display = "";
+	rect.style.display = "";
+	square.style.display = "";
+	circle.style.display = "";
+}
 
 
 
