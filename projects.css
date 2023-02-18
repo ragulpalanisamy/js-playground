@@ -1,4 +1,4 @@
-        /*body{
+/*         /*body{
             background: linear-gradient(pink,grey);
         }
         
@@ -130,14 +130,15 @@
             background-color: rgb(233, 222, 212);
         }
 */
-
+/*
 .link{
     list-style: none;
     display: flex;
     height:0;
-    /*overflow: auto;*/
+    /*overflow: auto;
     transition: var(--transition);
-}
+}*/
+/*
 li{
     margin: 0;
     padding: 1rem;
@@ -150,27 +151,28 @@ li{
 Variables
 ===============
 */
-
+/*
 :root {
-  /* dark shades of primary color*/
+   dark shades of primary color*/
+   /*
   --clr-primary-1: hsl(205, 86%, 17%);
   --clr-primary-2: hsl(205, 77%, 27%);
   --clr-primary-3: hsl(205, 72%, 37%);
   --clr-primary-4: hsl(205, 63%, 48%);
-  /* primary/main color */
+   primary/main color 
   --clr-primary-5: hsl(205, 78%, 60%);
-  /* lighter shades of primary color */
+   lighter shades of primary color 
   --clr-primary-6: hsl(205, 89%, 70%);
   --clr-primary-7: hsl(205, 90%, 76%);
   --clr-primary-8: hsl(205, 86%, 81%);
   --clr-primary-9: hsl(205, 90%, 88%);
   --clr-primary-10: hsl(205, 100%, 96%);
-  /* darkest grey - used for headings */
+  /* darkest grey - used for headings 
   --clr-grey-1: hsl(209, 61%, 16%);
   --clr-grey-2: hsl(211, 39%, 23%);
   --clr-grey-3: hsl(209, 34%, 30%);
   --clr-grey-4: hsl(209, 28%, 39%);
-  /* grey used for paragraphs */
+  /* grey used for paragraphs 
   --clr-grey-5: hsl(210, 22%, 49%);
   --clr-grey-6: hsl(209, 23%, 60%);
   --clr-grey-7: hsl(211, 27%, 70%);
@@ -197,7 +199,7 @@ Variables
 =============== 
 Global Styles
 ===============
-*/
+
 
 *,
 ::after,
@@ -268,9 +270,9 @@ p {
     line-height: 1;
   }
 }
-/*  global classes */
+/*  global classes 
 
-/* section */
+/* section 
 .section {
   padding: 5rem 0;
 }
@@ -290,12 +292,12 @@ main {
   display: grid;
   place-items: center;
 }
-
+*/
 /*
 =============== 
 Navbar
 ===============
-*/
+
 nav {
   background: var(--clr-white);
   box-shadow: var(--light-shadow);
@@ -384,4 +386,4 @@ nav {
   .social-icons a:hover {
     color: var(--clr-primary-7);
   }
-}
+} */
