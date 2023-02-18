@@ -1,4 +1,4 @@
-//generate quotes
+/* //generate quotes
 /*
 let quotes = document.getElementById("h");
 let text = document.getElementById("h3");
@@ -230,7 +230,7 @@ function showTime(){
 }
 
 showTime();
-*/
+/*
 const navToggle = document.querySelector(".nav-toggle");
 const links = document.querySelector(".links");
 
@@ -238,21 +238,35 @@ navToggle.addEventListener("click", function () {
     links.classList.toggle("show-links");
 });
 
+ */
+//window
+
+console.log(window);
+
+//window.open();
+
+//window.close();
+//window.moveTo();
+//window.AnimationEffect();
+console.log(navigator.cookieEnabled);
+console.log(navigator.onLine);
+console.log(navigator.appName);
+console.log(navigator.platform);
+console.log(navigator.language);
+console.log(window.location.href);
+console.log(window.location.hostname);
+console.log(window.location.protocol);
+console.log(navigator.vibrate(1000));
+
+let a = prompt("enter Yes/No");
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+if(a = 'Yes'){
+	console.log(navigator.vibrate(1000));
+}
+else{
+console.log("Vibration API is not supported in your browser");
+}
 
 
 
