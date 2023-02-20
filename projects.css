@@ -387,7 +387,9 @@ nav {
     color: var(--clr-primary-7);
   }
 } */
+/*
 body {
+
   font-family: "Montserrat", sans-serif;
   color: #454545;
   margin: 0px;
@@ -447,3 +449,51 @@ footer p {
   font-size: 12px;
 }
 Footer
+*/
+
+.container{
+  background-image: linear-gradient(violet,pink);
+
+}
+
+label{
+  text-align: center;
+  align-self: auto;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+.custmername{
+  color: darkblue;
+  background-color: aliceblue;
+  border-radius: 10px;
+  width:auto;
+  height:auto;
+  font-size: large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.randomize{
+ cursor: pointer;
+ font-size: large;
+ border-radius: 10px;
+ padding: 10px;
+ border: 1px dotted pink;
+ margin: auto;
+ color:chocolate;
+}
+ 
+btn:active {
+  color: blueviolet;
+}
+
+.h{
+  background-color: bisque;
+  color: blue;
+  font-size: larger;
+  font-family: 'Times New Roman', Times, serif;
+  visibility: hidden;
+}
+.us, 
+.uk {
+  background-color:burlywood;
+}
