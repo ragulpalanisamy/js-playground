@@ -450,7 +450,7 @@ footer p {
 }
 Footer
 */
-
+/*
 .container{
   background-image: linear-gradient(violet,pink);
 
@@ -496,4 +496,42 @@ btn:active {
 .us, 
 .uk {
   background-color:burlywood;
+}
+*/
+
+#container{
+  align-items: center;
+  background-color: black;
+  font-size: 100px;
+  text-align: center;
+  justify-content: center;
+  color: green;
+  height: fill;
+  width: fill;
+  border: 3px solid yellow;
+  border-radius: 10px;
+}
+
+.btn{
+  border: 1px solid grey;
+  border-radius: 10px;
+  color: blue;
+  background-color: lightblue;
+  font-size: x-large;
+  cursor: pointer;
+}
+
+#showTime{
+  font-size: 100px;
+  color: yellowgreen;
+   
+}
+.mi{
+  color: greenyellow;
+}
+.hr{
+  color: darkmagenta;
+}
+.se{
+  color: darkkhaki;
 }
