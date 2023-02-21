@@ -335,6 +335,7 @@ document.getElementById("click").onclick = function(){
 
 content.style.visiblity = 'visible';
 */
+/*
 const customName = document.getElementById('customname');
 const randomize = document.querySelector('.randomize');
 const story = document.querySelector('.story');
@@ -377,8 +378,47 @@ function result() {
   story.textContent = newStory;
   story.style.visibility = 'visible';
 }
+*/
 
+//synchronous code
 
+console.log("Hi");
+console.log("Hello");
+console.log("welcome Ragul!..");
 
+//Asynchronous code
+
+console.log("Hello ");
+setTimeout(("Hello"),1000);
+console.log("Hi");
+
+//setInterval
+/*
+let count=0;
+let x=prompt("Enter a Number:");
+x=(Number)(x);
+let t = setInterval(countup, 1000);
+
+function countup(){
+
+	for(let i=count;i<=x;i++){
+		console.log(i);	
+	}
+	clearInterval(t);
+}
+*/
+//another way
+
+let c =0;
+let a =prompt("Enter the value:");
+a=Number(a);
+let t1 = setInterval(counter, 1000);
+function counter(){
+	c = c + 1;
+	if(c <= a){
+		window.alert(c);
+	}
+		
+}
 
 
