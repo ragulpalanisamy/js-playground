@@ -381,7 +381,7 @@ function result() {
 */
 
 //synchronous code
-
+/*
 console.log("Hi");
 console.log("Hello");
 console.log("welcome Ragul!..");
@@ -391,7 +391,7 @@ console.log("welcome Ragul!..");
 console.log("Hello ");
 setTimeout(("Hello"),1000);
 console.log("Hi");
-
+*/
 //setInterval
 /*
 let count=0;
@@ -408,7 +408,7 @@ function countup(){
 }
 */
 //another way
-
+/*
 let c =0;
 let a =prompt("Enter the value:");
 a=Number(a);
@@ -420,5 +420,85 @@ function counter(){
 	}
 		
 }
+*/
+
+const showTime = document.querySelector("#showTime");
+const start = document.querySelector("#start");
+const pause = document.querySelector("#stop");
+const reset = document.querySelector("#pause");
+
+let startTime =0;
+let elapsedTime =0;
+let currentTime =0;
+let paused = true;
+let intervalId = 0;
+let hrs =0;
+let min=0;
+let sec =0;
+
+start.addEventListener("click", () => {
+	if(paused){
+		paused = false;
+		startTime = Date.now() - elapsedTime;
+		intervalId = setInterval(updateTime, 75);
+	}
+});
+pause.addEventListener("click", ()=> {
+	if(!paused){
+		paused=true;
+		elapsedTime = Date.now() - startTime;
+		clearInterval(intervalId);
+	}
+});
+reset.addEventListener("click", () => {
+	paused = true;
+	clearInterval(intervalId);
+		 startTime =0;
+		 elapsedTime =0;
+		 currentTime =0;
+		 hrs =0;
+		 min=0;
+		sec =0;
+		showTime.textContent="00:00:00";
+});
+	
+	
+
+
+	
+function updateTime(){
+	elapsedTime = Date.now() - startTime;
+
+	sec = Math.floor((elapsedTime / 1000) % 60);
+	min = Math.floor((elapsedTime / (1000 * 60)) % 60);
+	hrs = Math.floor((elapsedTime / (1000 * 60 * 60)) % 60);
+	
+	sec = pad(sec);
+	min = pad(min);
+	hrs = pad(hrs);
+
+	showTime.textContent = `${hrs}:${min}:${sec}`;
+	
+	function pad(unit){
+		return (("0") + unit).length > 2 ? unit : "0" + unit;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
