@@ -498,7 +498,7 @@ btn:active {
   background-color:burlywood;
 }
 */
-
+/*
 #container{
   align-items: center;
   background-color: black;
@@ -535,3 +535,50 @@ btn:active {
 .se{
   color: darkkhaki;
 }
+*/
+
+#gameDiv{
+  border: 3px solid gray;
+  border-radius: 10px;
+  text-align: center;
+  background-color: lightgrey;
+  padding: 10px;
+  font-family: 'brush Script MT', cursive;
+}
+
+#playerText{
+  color: blue;
+}
+#computerText{
+  color: red;
+}
+
+.btn{
+  border: 1px solid gray;
+  border-radius: 20px;
+  color: yellowgreen;
+  font-size: x-large;
+  line-height: 30px;
+  width: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
