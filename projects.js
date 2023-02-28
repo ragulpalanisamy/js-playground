@@ -486,7 +486,7 @@ function updateTime(){
 }
 
  */
-
+/* 
 const playerText = document.querySelector("#playerText");
 const computerText = document.querySelector("#computerText");
 const resultText = document.querySelector("#resultText");
@@ -533,9 +533,22 @@ function checkWinner(){
 		return (player == "ROCK") ? "You Win!" : "You Lose...";
 	}
 }
+ */
+function validate(){
+	
+let name=document.getElementById("name").value;
+let password = document.getElementById("password").value;
 
+	if(name == NULL || name ==""){
+		document.alert("Name cannot be blank");
+		return false;
+	}
+	else if(password.length<6){
+		document.alert("Password must be atleast 6 characters long");
+		return false;
+	}
 
-
+}
 
 
 
