@@ -534,6 +534,7 @@ function checkWinner(){
 	}
 }
  */
+
 function validate(){
 	
 let name=document.getElementById("name").value;
@@ -550,8 +551,10 @@ let password = document.getElementById("password").value;
 
 }
 
-
-
+function redirect(){
+	window.location = "form.html";
+}
+//setTimeout(redirect(), 5000);
 
 
 
