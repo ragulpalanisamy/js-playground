@@ -556,6 +556,10 @@ function redirect(){
 }
 //setTimeout(redirect(), 5000);
 
+function fun() {
+	document.getElementById("p").style.color ="blue";
+	document.getElementById("p").style.backgroundColor = "grey";
+}
 
 
 
