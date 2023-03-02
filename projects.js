@@ -534,34 +534,20 @@ function checkWinner(){
 	}
 }
  */
+/* A */
+window.onscroll = function() {myFunction()};
 
-function validate(){
-	
-let name=document.getElementById("name").value;
-let password = document.getElementById("password").value;
+var navbar = document.getElementById("navbar");
 
-	if(name == NULL || name ==""){
-		document.alert("Name cannot be blank");
-		return false;
-	}
-	else if(password.length<6){
-		document.alert("Password must be atleast 6 characters long");
-		return false;
-	}
 
+var sticky = navbar.offsetTop;
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
 }
-
-function redirect(){
-	window.location = "form.html";
-}
-//setTimeout(redirect(), 5000);
-
-function fun() {
-	document.getElementById("p").style.color ="blue";
-	document.getElementById("p").style.backgroundColor = "grey";
-}
-
-
 
 
 
