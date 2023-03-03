@@ -535,6 +535,7 @@ function checkWinner(){
 }
  */
 /* A */
+/* 
 window.onscroll = function() {myFunction()};
 
 var navbar = document.getElementById("navbar");
@@ -548,6 +549,20 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
-
-
-
+ */
+function sumOfEvenNumbers(numbers) {
+	let sum = 0;
+	for (let i = 0; i < numbers.length; i++) {
+	  if (numbers[i] % 2 === 0) {
+		sum += numbers[i];
+	  }
+	}
+	return sum;
+  }
+  
+  // example usage
+  let input = prompt("Enter a list of comma-separated numbers:");
+  let numbers = input.split(",").map(Number);
+  let result = sumOfEvenNumbers(numbers);
+  console.log(result);
+  
