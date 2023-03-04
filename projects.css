@@ -1052,7 +1052,7 @@ img:hover{
   background-color: rgb(68, 144, 211);
  }
  #card{
-  height: 250px;
+  height: 300px;
   width: 500px;
   border: 1px solid grey;
   border-radius: 10px;
@@ -1082,7 +1082,7 @@ img:hover{
   border-radius: 10px;
   text-align: center;
   color:rgb(127, 224, 17);
-  width: 100px;
+  width: fit-content;
   height:25px;
  }
  .btn:hover{

@@ -566,10 +566,22 @@ function myFunction() {
   let result = sumOfEvenNumbers(numbers);
   console.log(result);
  */  
-  document.getElementById("input").innerHTML = "INCHES:";
-  document.getElementById("button").onclick = function(){
-	let number = document.getElementById("number").value;
+  document.getElementById("input").innerHTML = "CONVERSIONS";
+  document.getElementById("meter").onclick = function(){
+	let number = document.getElementById("number1").value;
 	let c = Number(number);  
 
-	document.getElementById("input").innerHTML = (c / 2.54).toFixed(2) + " inches";
+	document.getElementById("input").innerHTML = (c * 1000) + " meters";
+  }
+  document.getElementById("cen").onclick = function(){
+	let number = document.getElementById("number2").value;
+	let c = Number(number);  
+
+	document.getElementById("input").innerHTML = (c * 100) + " centimeters";
+  }
+  document.getElementById("mil").onclick = function(){
+	let number = document.getElementById("number3").value;
+	let c = Number(number);  
+
+	document.getElementById("input").innerHTML = (c * 10) + " millimeters";
   }
