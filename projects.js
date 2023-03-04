@@ -550,7 +550,7 @@ function myFunction() {
   }
 }
  */
-function sumOfEvenNumbers(numbers) {
+/* function sumOfEvenNumbers(numbers) {
 	let sum = 0;
 	for (let i = 0; i < numbers.length; i++) {
 	  if (numbers[i] % 2 === 0) {
@@ -565,4 +565,11 @@ function sumOfEvenNumbers(numbers) {
   let numbers = input.split(",").map(Number);
   let result = sumOfEvenNumbers(numbers);
   console.log(result);
-  
+ */  
+  document.getElementById("input").innerHTML = "INCHES:";
+  document.getElementById("button").onclick = function(){
+	let number = document.getElementById("number").value;
+	let c = Number(number);  
+
+	document.getElementById("input").innerHTML = (c / 2.54).toFixed(2) + " inches";
+  }
