@@ -1092,11 +1092,16 @@ img:hover{
  .btn:active{
   background-color: blue;
  }
- #input{
+ #p{
   color: mediumblue;
   background-color: aquamarine;
   margin: 20px;
   text-align: center;
   font-size: x-large;
   font-weight: bolder;  
+}
+select{
+  border:1px solid grey;
+  border-radius: 10px;
+  width: 50%;
 }
