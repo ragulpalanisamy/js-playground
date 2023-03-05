@@ -566,6 +566,7 @@ function myFunction() {
   let result = sumOfEvenNumbers(numbers);
   console.log(result);
  */  
+/* 
   document.getElementById("input").innerHTML = "CONVERSIONS";
   document.getElementById("meter").onclick = function(){
 	let number = document.getElementById("number1").value;
@@ -585,3 +586,43 @@ function myFunction() {
 
 	document.getElementById("input").innerHTML = (c * 10) + " millimeters";
   }
+
+  let  ="Ragul";
+	name.slice();   */
+
+	const btn = document.querySelector('button');
+	btn.addEventListener('click', display);
+	function display(){
+
+		const input = document.getElementById("input");
+		const city = input.options[input.selectedIndex].value;
+
+		let pop =0,lit =0,lan =0;
+		switch(city){
+			case 'bangalore':
+				pop = 8443675
+				lit = 88.71
+				lan = 'Kannada'
+				break;
+				
+			case 'Chennai':
+				pop = 9443675
+				lit = 89.71
+				lan = 'Tamil'
+				break;
+				
+			case 'Trichy':
+				pop = 7543675
+				lit = 86.71
+				lan = 'Tamil'
+				break;
+				
+			case 'New Delhi':
+				pop = 9543675
+				lit = 90.71
+				lan = 'Hindi'
+				break;
+		}
+		let text =`The Indian city of ${city} has a population of ${pop} . Language Spoken ${lan} and its literature survey ${lit}.`
+		document.getElementById("p").innerHTML = text;
+	}
