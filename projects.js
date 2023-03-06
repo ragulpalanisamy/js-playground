@@ -626,3 +626,36 @@ function myFunction() {
 		let text =`The Indian city of ${city} has a population of ${pop} . Language Spoken ${lan} and its literature survey ${lit}.`
 		document.getElementById("p").innerHTML = text;
 	}
+
+
+	let user = {
+		name: "ragul",
+		username:"ragul1010",
+		password: 12345678
+	};
+//.notation
+	console.log(user.password);
+//square bracket notation
+	console.log(user['username']);
+//change
+	let uname = 'username';
+	console.log(user[uname] = "ragul1432")
+
+	let arr=['ECE','CSE','IT','EEE','MECH','CIVIL'];
+	//let b=arr.length;
+	var option ="";
+	
+	for(let i=0;i<arr.length;i++){
+	option += '<option value ="'+arr[i] +'">' + arr[i] + "</option>";		
+	}
+	document.getElementById("input").innerHTML=option;
+	
+    /* let select = document.querySelector("input");
+	document.getElementsByTagName("option").innerHTML = b[0];
+	document.getElementsByTagName("option").innerHTML = b[1];
+	document.getElementsByTagName("option").innerHTML = b[2];
+	document.getElementsByTagName("option").innerHTML = b[3];
+	document.getElementsByTagName("option").innerHTML = b[4];
+	document.getElementsByTagName("option").innerHTML = b[5];
+	document.getElementsByTagName("option").innerHTML = b[0]; */
+	
