@@ -679,3 +679,24 @@ function random(){
 	let random = Math.floor(Math.random(hex) * 16);
 	return hex[random]; 
 }
+
+function fact(n){
+	if(n==1){
+		return 1;
+	}
+	else{
+		return n * fact(n-1); 
+	}
+}
+console.log(fact(5));
+
+
+let n= [1,2,3,4,5]
+let find = function(n){
+	let sum = 0
+	for(let val of n){
+		sum += val; 
+	}
+	return sum;
+} 
+console.log(find(n));
