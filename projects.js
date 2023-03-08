@@ -660,7 +660,7 @@ function myFunction() {
 	document.getElementsByTagName("option").innerHTML = b[0]; */
 	 
 
-let btn = document.getElementById("btn");
+/* let btn = document.getElementById("btn");
 let color = document.getElementById("color");
 let wrap = document.getElementById("wrap");
 let back = wrap.getElementsByTagName("div");
@@ -700,3 +700,67 @@ let find = function(n){
 	return sum;
 } 
 console.log(find(n));
+console.clear();
+
+n.forEach((val,index,n)=>{
+	n[index] = 1;
+});
+console.log(n);
+
+//add positive number only
+let input = [6,-5,7,-2,4,6,-1];
+let sum=0;
+for(let val of input){
+	if(val > 0){
+		sum+=val;
+	}
+}
+console.log(sum); */
+
+//array reduce
+let a =[
+	['a','b','c'],
+	['c','b','d'],
+	['e','d','f']
+];
+
+console.log(a.flat());
+let count = a.flat().reduce(
+	(acc,el) =>{
+		if(acc[el]){
+			acc[el]++;
+		}
+		else{
+			acc[el]=1;
+		}
+		return acc;
+	}
+	,{});
+console.log(count);
+
+console.clear();
+
+//remove duplicates 
+let arr = [4,6,2,3,1,1,3,5,7,8,4,3];
+
+let dup = arr.filter((c,ind) =>{
+	return arr.indexOf(c) === ind;
+});
+	console.log(dup.sort());
+
+	//abbrivate first letter in a word
+	let n = "Robert Andrew George";
+	let res = n.charAt(0)+""+ n.charAt(7)+""+ n.charAt(14);
+	console.log(res);	
+
+	//add positive number
+
+	let z=[6,-5,7,-2,4,6,-1];
+	let co=0;
+	for(let i=0; i<z.length;i++){
+		if(z[i] > 0){
+			co += z[i];
+		}
+	}
+
+	console.log(co);
