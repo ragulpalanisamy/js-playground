@@ -743,10 +743,11 @@ console.clear();
 //remove duplicates 
 let arr = [4,6,2,3,1,1,3,5,7,8,4,3];
 
-let dup = arr.filter((c,ind) =>{
+let dup = new Set(arr);
+/* .filter((c,ind) =>{
 	return arr.indexOf(c) === ind;
-});
-	console.log(dup.sort());
+}); */
+	console.log(dup);
 
 	//abbrivate first letter in a word
 	let n = "Robert Andrew George";
@@ -764,3 +765,19 @@ let dup = arr.filter((c,ind) =>{
 	}
 
 	console.log(co);
+
+	//closure
+
+	function add(x){
+		return function(y){
+			return x+y;
+		}
+	}
+	let ad = add(25);
+	console.log(ad(1));
+
+	let f;
+	f.add(6);
+	f.add('h');
+	f.add(9);
+	console.log(f);
