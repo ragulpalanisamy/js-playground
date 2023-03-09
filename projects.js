@@ -718,7 +718,7 @@ for(let val of input){
 console.log(sum); */
 
 //array reduce
-let a =[
+/* let a =[
 	['a','b','c'],
 	['c','b','d'],
 	['e','d','f']
@@ -747,7 +747,7 @@ let dup = new Set(arr);
 /* .filter((c,ind) =>{
 	return arr.indexOf(c) === ind;
 }); */
-	console.log(dup);
+	/* console.log(dup);
 
 	//abbrivate first letter in a word
 	let n = "Robert Andrew George";
@@ -780,4 +780,17 @@ let dup = new Set(arr);
 	f.add(6);
 	f.add('h');
 	f.add(9);
-	console.log(f);
+	console.log(f); */ 
+
+
+// Add two numbers and return their address with equal 
+	let twoSum = function(nums, target) {
+		for(let i=0;i<nums.length;i++){
+			for(let j=i+1;j<nums.length;j++){
+				if(nums[i] + nums[j] == target){
+					return [i,j];
+				}
+			}
+		}
+	};
+	
