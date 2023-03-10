@@ -796,7 +796,7 @@ let dup = new Set(arr);
 	 */
 
 
-	class user{
+/* 	class user{
 		static count=0;
 		constructor(name,age){
 			this.name = name;
@@ -840,4 +840,37 @@ let dup = new Set(arr);
 	console.log(sub1);
 	sub1.login();
 	sub1.message();
-	
+ */	
+	//without using a class we can create object:
+
+	function user(name,age){
+		this.name=name;
+		this.age=age;
+	}
+	user.prototype.login  = function(){
+		alert(`Hi ,${this.name}`);
+		alert(`welcome back, ${this.name}`)
+	}
+	let user1 = new user('Ragul',21);
+	console.log(user1);
+	user1.login();
+
+	//get and set
+
+	class student{
+		constructor(name,sec){
+			this._name=name;
+			this._sec=sec;
+		}
+		get stud(){
+			return 	`${this._name} and the section ${this._sec}`;
+		}
+		set stud(_name){
+				if(_name  != 0){
+					alert('Not A Number');
+				}
+		}
+	}
+
+	let stud1 = new student(12,'A');
+	console.log(stud1.stud);
