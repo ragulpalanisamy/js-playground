@@ -842,7 +842,7 @@ let dup = new Set(arr);
 	sub1.message();
  */	
 	//without using a class we can create object:
-
+/* 
 	function user(name,age){
 		this.name=name;
 		this.age=age;
@@ -874,3 +874,22 @@ let dup = new Set(arr);
 
 	let stud1 = new student(12,'A');
 	console.log(stud1.stud);
+
+	 */
+//setTimeOut and SetInterval.
+
+setInterval(() => alert("Welcome!..."),2000);
+
+console.log("hi,....");
+
+function synch(){
+	console.log("1");
+	console.log("2");
+	console.log("3");
+}
+synch();
+
+setTimeout(() => console.log("3"),1000);
+setTimeout(() => console.log("2"),2000);
+setTimeout(() => console.log("1"),3000);
+setTimeout(() => console.log("Let's Go"),3500);
