@@ -821,3 +821,23 @@ let dup = new Set(arr);
 	console.log(user2);
 	user2.login();
 	console.log(" " + user.count);
+
+	class subscriber extends user{
+		constructor(name,age){
+			super(name,age);
+			this.storage = 100;
+		}
+		message(){
+			alert(`You have 100GB free Storage`);
+		}
+		//method overridding from base class method.
+		login(){
+			console.log("Thanks for Enrolling.");
+		}
+	}
+
+	let sub1 = new subscriber("raj",21);
+	console.log(sub1);
+	sub1.login();
+	sub1.message();
+	
