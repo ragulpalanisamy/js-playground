@@ -784,7 +784,7 @@ let dup = new Set(arr);
 
 
 // Add two numbers and return their address with equal 
-	let twoSum = function(nums, target) {
+/* 	let twoSum = function(nums, target) {
 		for(let i=0;i<nums.length;i++){
 			for(let j=i+1;j<nums.length;j++){
 				if(nums[i] + nums[j] == target){
@@ -793,4 +793,31 @@ let dup = new Set(arr);
 			}
 		}
 	};
-	
+	 */
+
+
+	class user{
+		static count=0;
+		constructor(name,age){
+			this.name = name;
+			this.age = age;
+			user.count++;
+		}
+
+		login(){
+			console.log(`hi, ${this.name}`);
+			console.log(`Welcome back , ${this.name}`);
+		}
+		logout(){
+			console.log("You logged Out");
+		}
+	}
+
+	let user1 = new user("Ragul",21);
+	let user2 = new user("sachin",13);
+ 	console.log(user1);
+	user1.login();
+	user1.logout();
+	console.log(user2);
+	user2.login();
+	console.log(" " + user.count);
