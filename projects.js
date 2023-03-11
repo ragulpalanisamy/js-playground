@@ -895,6 +895,7 @@ setTimeout(() => console.log("1"),3000);
 setTimeout(() => console.log("Let's Go"),3500);
  */
 //promise
+/* 
 const takal = new Promise((resolve,reject) => {
 	let booking = true;
 	if(booking){
@@ -948,4 +949,18 @@ function failure(){
  Promise.any([frd1,frd2,frd3])
  .then((message) => console.log(message))
  .catch((message) => console.log(message));
+ */
 
+ try{
+	num = prompt("Enter a Number:");
+	if(num == ''){
+		throw "Cannot be empty";
+	}
+	if(isNaN(num)){
+		throw "Enter a valid number";
+	}
+	alert(num ** 2);
+ }
+ catch(error){
+	alert(error);
+ }
