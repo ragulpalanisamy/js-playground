@@ -877,7 +877,7 @@ let dup = new Set(arr);
 
 	 */
 //setTimeOut and SetInterval.
-
+/* 
 setInterval(() => alert("Welcome!..."),2000);
 
 console.log("hi,....");
@@ -893,3 +893,59 @@ setTimeout(() => console.log("3"),1000);
 setTimeout(() => console.log("2"),2000);
 setTimeout(() => console.log("1"),3000);
 setTimeout(() => console.log("Let's Go"),3500);
+ */
+//promise
+const takal = new Promise((resolve,reject) => {
+	let booking = true;
+	if(booking){
+		resolve();
+	}
+	else{
+		reject();
+	}
+})
+
+takal.then(success).catch(failure);
+
+function success(){
+	alert("Thanks Buddy , I will share the amount.");
+}
+function failure(){
+	alert("OOPS Something went wrong and you can book a bus ticket");
+}
+
+
+ let frd1 = new Promise((resolve,reject) => {
+	let reached = true;
+	if(reached){
+		setTimeout(resolve,3000,"Raj reached Home");
+	}
+	else{
+		reject("raj is not reached");
+	}
+ }) 
+
+  let frd2 = new Promise((resolve,reject) => {
+	let reached = false;
+	if(reached){
+		setTimeout(resolve,2000,"Sachin reached Home");
+	}
+	else{
+		reject("sachin is not reached");
+	}
+ }) 
+
+  let frd3 = new Promise((resolve,reject) => {
+	let reached = true;
+	if(reached){
+		setTimeout(resolve,1000,"Ragul reached Home");
+	}
+	else{
+		reject("Ragul is not reached");
+	}
+ }) 
+
+ Promise.any([frd1,frd2,frd3])
+ .then((message) => console.log(message))
+ .catch((message) => console.log(message));
+
