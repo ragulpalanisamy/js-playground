@@ -935,22 +935,22 @@ function failure(){
 		reject("sachin is not reached");
 	}
  }) 
-
+*//* 
   let frd3 = new Promise((resolve,reject) => {
-	let reached = true;
+	let reached = false;
 	if(reached){
 		setTimeout(resolve,1000,"Ragul reached Home");
 	}
 	else{
-		reject("Ragul is not reached");
+	 	reject("Ragul is not reached");
 	}
- }) 
-
+ })  */
+/*
  Promise.any([frd1,frd2,frd3])
  .then((message) => console.log(message))
  .catch((message) => console.log(message));
  */
-
+/* 
  try{
 	num = prompt("Enter a Number:");
 	if(num == ''){
@@ -963,4 +963,44 @@ function failure(){
  }
  catch(error){
 	alert(error);
+ } */
+/* 
+ async function fun(){
+	return "hello";
  }
+ fun();
+
+ async function async(){
+	try{
+	console.log("hi...");
+	res = await frd3;
+	console.log(res);
+	console.log("bye");
+	}
+	catch(err){
+		console.log(err);
+	}
+ }
+
+ async();
+ */
+/* 
+ fetch('https://api-thirukkural.vercel.app/api?num=4')
+ .then(re => re.json())
+ .then(ms => console.log(ms.line1,ms.line2))
+ .catch(err => console.log(err)) */
+
+ fetch('https://bhagavad-gita3.p.rapidapi.com/v2/chapters/')
+ .then(res => res.json())
+ .then(ms => ms)
+ .catch(err => console.log(err));
+
+ let n=prompt("Enter the String:");
+   regexp = /^[A-Z]/;
+   if(regexp.test(n)){
+	alert("Upper Case");
+   }
+   else{
+	alert("Lower Case");
+   }
+  
