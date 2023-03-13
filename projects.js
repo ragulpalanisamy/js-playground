@@ -990,7 +990,7 @@ function failure(){
  .then(ms => console.log(ms.line1,ms.line2))
  .catch(err => console.log(err)) */
 
- fetch('https://bhagavad-gita3.p.rapidapi.com/v2/chapters/')
+ /* fetch('https://bhagavad-gita3.p.rapidapi.com/v2/chapters/')
  .then(res => res.json())
  .then(ms => ms)
  .catch(err => console.log(err));
@@ -1003,4 +1003,13 @@ function failure(){
    else{
 	alert("Lower Case");
    }
-  
+   */
+
+   let n=prompt("Enter a String:");
+   regexp =/[aeiou]/gi;
+   if(regexp.test(n)){
+	alert("Vowels");
+   }
+   else{
+	alert("Consonents");
+   }
