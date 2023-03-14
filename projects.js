@@ -1005,11 +1005,28 @@ function failure(){
    }
    */
 
-   let n=prompt("Enter a String:");
+/*    let n=prompt("Enter a String:");
    regexp =/[aeiou]/gi;
    if(regexp.test(n)){
 	alert("Vowels");
    }
    else{
 	alert("Consonents");
-   }
+   } */
+
+   let myPromise = new promise(function(resolve,reject){
+
+	let h=1;
+	if(h){
+		resolve();
+		console.log(setTimeout("Yes Its fine"),3000);
+	}
+	else{
+		reject();
+		alert("Its not Fine");
+	}
+   });
+   myPromise.then( value => console.log(value))
+   myPromise.then(value => console.log(value))
+   .catch(err => console.log(err));
+
