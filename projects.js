@@ -1140,6 +1140,7 @@ function failure(){
 	showPerson(currentItem);
   });
   // show random person
+  /* 
   randomBtn.addEventListener('click', function () {
 	console.log('hello');
   
@@ -1173,3 +1174,10 @@ function failure(){
     output = output + "</table>";
     document.write(output);
     }
+ */
+
+	function generateUniqueId() {
+		return Math.random().toString(36).substr(2, 9);
+	  }
+	const uniqueId = generateUniqueId();
+	console.log(uniqueId);
